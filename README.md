@@ -1,6 +1,6 @@
 # SCUT 五山校区地图导航（数据结构课程设计）
 
-本项目为小组数据结构课程设计作业：针对 **华南理工大学五山校区** 的地图数据，提供 **建筑信息查询** 与 **建筑间最短路径规划**（步行/驾车）等功能。citeturn1view0
+本项目为小组数据结构课程设计作业：针对 **华南理工大学五山校区** 的地图数据，提供 **建筑信息查询** 与 **建筑间最短路径规划**（步行/驾车）等功能。
 
 ---
 
@@ -8,7 +8,6 @@
 
 - [功能概览](#功能概览)
 - [项目结构](#项目结构)
-- [环境与编译](#环境与编译)
 - [运行方式](#运行方式)
 - [输入数据格式](#输入数据格式)
 - [数据来源与获取](#数据来源与获取)
@@ -54,38 +53,6 @@ docs/
 tools/
   convert.py       # 从 OSM/GeoJSON 转换到程序输入格式的脚本
 ```
-
----
-
-## 环境与编译
-
-### 方式 A：g++ / clang++（推荐，最通用）
-
-> 需要支持 C++17 的编译器
-
-```bash
-g++ -std=c++17 -O2 -o scut Map.cpp
-```
-
-运行：
-
-```bash
-./scut < data/data.txt
-```
-
-### 方式 B：Windows + VS Code（你当前的环境）
-
-1. 安装 **MinGW-w64** 或 **MSYS2**（确保 `g++` 可用）
-2. VS Code 安装扩展：
-   - C/C++（Microsoft）
-3. 打开项目文件夹 → `Terminal` 里执行：
-
-```powershell
-g++ -std=c++17 -O2 -o scut.exe Map.cpp
-.\scut.exe < data\data.txt
-```
-
-> 如果你没有准备 `data.txt`，程序会等待你从键盘输入完整数据。
 
 ---
 
@@ -279,4 +246,4 @@ system("shutdown -r -t 0");
 ## 致谢
 
 - OpenStreetMap Contributors（地图数据）
-- Overpass API / Overpass Turbo（数据查询与导出）citeturn4search0turn4search3
+- Overpass API / Overpass Turbo（数据查询与导出）
